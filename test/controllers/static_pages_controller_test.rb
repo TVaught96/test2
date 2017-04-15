@@ -7,11 +7,6 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_select "title", "Home | American Protection"
   end
 
-  test "should get help" do
-    get :help
-    assert_response :success
-  end
-
   test "should get about" do
     get :about_us
     assert_response :success

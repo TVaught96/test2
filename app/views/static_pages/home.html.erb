@@ -5,15 +5,15 @@
         <title><%= yield(:title)%> | American Protection</title>
         <meta charset ="utf-8">
         <style type="text/css">
-            h3{
+            h1{
                 border-style:solid;
                 background-color:navy;
                 color:white;
                 border-color:black;
-                border-width:4px;
-                margin-bottom:1px;
+                border-width:3px;
+                margin-bottom:10px;
                 margin-top:0px;
-                height:120px;
+                height:127px;
             }
             
             body {
@@ -27,10 +27,10 @@
     </head>
     <body>
 	<div class="center">
-        <h1 style="text-align:center;"><img src="o.jpg" alt="Logo"></img> <Strong>American Protection LLC</Strong></h1>
+        <h1 style="text-align:center;"><%= link_to image_tag("o.jpg", alt: "Logo") %> <Strong>American Protection LLC</Strong></h1>
 	<p>
 	Welcome to the website of American Protection, where we make your safety our top priority.
-	If you haven't already made an account with your account number given at the time of installation, please click the button below.
+	If you are a customer of ours and haven't already made an account, please click the button below.
 	Not an existing customer?
 	Please feel free to look around!
 	</p>

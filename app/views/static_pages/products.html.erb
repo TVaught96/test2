@@ -10,20 +10,31 @@
                 background-color:navy;
                 color:white;
                 border-color:black;
-                border-width:4px;
+                border-width:3px;
                 margin-bottom:1px;
                 margin-top:0px;
-                height:120px;
+                height:40px;
             }
+
+	    h2{
+		border-style:solid;
+                background-color:navy;
+                color:white;
+                border-color:black;
+                border-width:3px;
+                margin-bottom:1px;
+                margin-top:0px;
+                height:20px;
+	      }
             h3{
                 border-style:solid;
                 background-color:navy;
                 color:white;
                 border-color:black;
-                border-width:4px;
+                border-width:3px;
                 margin-bottom:1px;
                 margin-top:0px;
-                height:120px;
+                height:30px;
             }
             
             body {
@@ -33,9 +44,40 @@
             p{
                 color:white;
             }
+
+	   ul{
+		color:white;
+	     }
         </style>
     </head>
     <body>
-        <h1 style="text-align:center;"><img src="o.jpg" alt="Logo"></img> <Strong>American Protection LLC</Strong></h1>
+        <h1 style="text-align:center;"><Strong>Products</Strong></h1>
+        <p> Below you will find a sample of the products we offer. We offer a range of products that include batteries, entire security systems, and singular devices for these systems. *If you are inquiring about a fire system, please call and set up a free consultation.</p>
+	<h2 style="text-align:center;">Batteries</h2>
+	<ul style="list-style-type:none">
+	<li><Strong> Our standard 12 Volt System Battery</Strong> </li> <%= link_to image_tag("battery.jpg", alt: "12 Volt Battery")%>
+	<li>-----------------------------------------------------------------------</li>
+	<li><Strong> Wireless device batteries</Strong> </li> <%= link_to image_tag("crbatt.jpg", alt: "CR Battery")%>
+        </ul>
+        <h3 style="text-align:center;">Base Systems</h3>
+	<p> Our Base systems include contacts on all exterior doors, two keypads, a siren, and a motion detector.</p>
+	<ul style="list-style-type:none">
+        <li><Strong> DSC Neo</Strong> </li> <%= link_to image_tag("dsc-neo-wireless-alarm-kit.jpg", alt: "DSC")%>
+	<li>-----------------------------------------------------------------------</li>
+        <li><Strong> Honeywell</Strong>*mainly used in applications where the house has been prewired for a security system. </li> <%= link_to image_tag("5.0__89955.1456945004.500.750.jpg", alt: "Honeywell")%>
+	<li>-----------------------------------------------------------------------</li>
+	<li><Strong>GE Systems</Strong></li><%= link_to image_tag("GE NX6FP-2.jpg", alt: "GE")%>
+	<li>-----------------------------------------------------------------------</li>
+	<li><Strong>2GIG Systems</Strong></li><%= link_to image_tag("2GIG-GCKIT311.jpg", alt: "2GIG")%>
+	<li>-----------------------------------------------------------------------</li>
+	<li><Strong>Napco Gemini</Strong></li><%= link_to image_tag("NPGEMDK1CA_media-001.jpg", alt: "Napco")%>
+        </ul>
+	<h3><Strong>Radios</Strong></h3>
+	<p>Here at American Protection, we believe in serving you with the best products and the best service. In order to do this we have decided to say goodbye to phone lines and hello to wireless communication via Radio. We offer two styles, the AES radio which communicates over a VHF frequency that we maintain and the Napco Starlink Radio which communicates signals over a cellular signal.</p>
+	<ul style="list-style-type:none">
+	<li><Strong>AES Radio</Strong></li><%= link_to image_tag("7058E-High-Res2.png", alt: "AES")%>
+	<li>-----------------------------------------------------------------------</li>
+	<li><Strong>Napco Starlink Radio</Strong></li><%= link_to image_tag("NAPCO_StarLink_CDMA.55009c99163ca.jpg", alt: "Starlink")%>
+	</ul>
     </body>
 </html>

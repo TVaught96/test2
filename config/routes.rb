@@ -15,8 +15,6 @@ Rails.application.routes.draw do
 
   get  '/products',   to: 'static_pages#products'
 
-  get  '/monitoring_plans',   to: 'static_pages#monitoring_plans'
-
   get '/signup', to: 'users#new'
 
   get    '/login',   to: 'sessions#new'

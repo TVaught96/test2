@@ -37,10 +37,4 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_select "title", "Service Options | American Protection"
   end
 
-  test "should get monitoring plans" do
-    get :monitoring_plans
-    assert_response :success
-    assert_select "title", "Monitoring Plans | American Protection"
-  end
-
 end

@@ -23,7 +23,4 @@ class StaticPagesController < ApplicationController
 
   def service_options
   end
-
-  def monitoring_plans
-  end
 end

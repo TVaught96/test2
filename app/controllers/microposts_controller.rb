@@ -5,7 +5,7 @@ before_action :correct_user,   only: :destroy
   def create
   @micropost = current_user.microposts.build(micropost_params)
     if @micropost.save
-      flash[:success] = "Micropost created!"
+      flash[:success] = "Review posted!"
       redirect_to customer_reviews_url
     else
       @feed_items = []

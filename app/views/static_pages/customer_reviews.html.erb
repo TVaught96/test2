@@ -13,7 +13,7 @@
                 border-width:4px;
                 margin-bottom:1px;
                 margin-top:0px;
-                height:120px;
+                height:127px;
             }
             h3{
                 border-style:solid;
@@ -22,7 +22,7 @@
                 border-color:black;
                 border-width:4px;
                 margin-bottom:1px;
-                margin-top:0px;
+                margin-top:1px;
                 height:120px;
             }
             
@@ -36,7 +36,7 @@
         </style>
     </head>
     <body>
-      <h1 style="text-align:center;"><img src="o.jpg" alt="Logo"></img> <Strong>Customer Reviews</Strong></h1>
+      <h1 style="text-align:center;"><%= link_to image_tag("o.jpg", alt: "Logo") %><Strong>Customer Reviews</Strong></h1>
       <div class="row">
         <aside class="col-md-4">
           <section class="user_info">
@@ -47,7 +47,7 @@
           </section>
         </aside>
         <div class="col-md-8">
-      <h3>Micropost Feed</h3>
+      <h3>Review Feed</h3>
       <%= render 'shared/feed' %>
     </div>
      </div>

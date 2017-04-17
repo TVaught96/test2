@@ -37,6 +37,7 @@
     </head>
     <body>
       <h1 style="text-align:center;"><%= link_to image_tag("o.jpg", alt: "Logo") %><Strong>Customer Blog</Strong></h1>
+      <% if logged_in? %>
       <div class="row">
         <aside class="col-md-4">
           <section class="user_info">
@@ -54,5 +55,8 @@
       <%= render 'shared/feed' %>
     </div>
      </div>
+<% else %>
+<p> This page is currently for customers only.</p>
+<% end %>
     </body>
 </html>

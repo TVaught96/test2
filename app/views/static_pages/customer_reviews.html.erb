@@ -1,4 +1,4 @@
-<% provide(:title, "Customer Reviews") %>
+<% provide(:title, "Customer Blog") %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -36,7 +36,7 @@
         </style>
     </head>
     <body>
-      <h1 style="text-align:center;"><%= link_to image_tag("o.jpg", alt: "Logo") %><Strong>Customer Reviews</Strong></h1>
+      <h1 style="text-align:center;"><%= link_to image_tag("o.jpg", alt: "Logo") %><Strong>Customer Blog</Strong></h1>
       <div class="row">
         <aside class="col-md-4">
           <section class="user_info">
@@ -47,7 +47,7 @@
           </section>
         </aside>
         <div class="col-md-8">
-      <h3>Review Feed</h3>
+      <h3>Posts</h3>
       <%= render 'shared/feed' %>
     </div>
      </div>
